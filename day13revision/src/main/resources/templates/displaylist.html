@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        <tr data-th-each="person: ${persons}">
+            <td data-th-text="${person.firstName}"></td>
+            <td data-th-text="${person.lastName}"></td>
+        </tr>
+    </table>
+    <button onclick="history.back()">Back</button>
+    <button>Add Person</button>
+</body>
+
+</html>
